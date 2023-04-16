@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+</head>
+<body>
+  <p>
+    <button onclick="
+      concertToFahrenheit(25);
+      " >Convert to Fahrenheit</button>
+
+      <button onclick="
+      concertToCelcuis(86);
+      " >Convert to Celcuis</button>
+
+      <button onclick="
+      convertTemperature(86, 'F');
+      " >Convert Temperature</button>
+  </p>
+  <script>
+
+    function concertToFahrenheit(celcuis){
+      Fahrenheit = (celcuis * 9 / 5) + 32;
+      result = console.log(`${Fahrenheit}F`);
+      return result;
+    }
+
+    function concertToCelcuis(fahrenheit){
+      celcuis = (fahrenheit - 32) * 5 / 9;
+      result = console.log(`${celcuis}C`);
+      return result;
+    }
+
+    function convertTemperature(degrees, unit){
+      if(unit === 'C'){
+        concertToFahrenheit(degrees);
+      }
+      else if(unit === 'F'){
+        concertToCelcuis(degrees);
+      }
+    }
+
+    
+  </script>
+</body>
+</html>
