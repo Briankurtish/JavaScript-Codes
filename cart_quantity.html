@@ -12,38 +12,72 @@
   <button onclick="console.log(`Cart Quantity: ${cartQuantity}`)">Cart Quantity</button>
   <button 
     onclick="
-    cartQuantity = cartQuantity + 1;
-    console.log(`Cart Quantity: ${cartQuantity}`)">
+    
+    if(cartQuantity + 1 > maxQuantity){
+      alert('You have reached the maximum quantity of items allowed.');
+    }else{
+      cartQuantity = cartQuantity + 1;
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }
+      ">
     Add to Cart
   </button>
   <button 
     onclick="
+      
+      if(cartQuantity + 2 > maxQuantity){
+      alert('You have reached the maximum quantity of items allowed.');
+    }else{
       cartQuantity = cartQuantity + 2;
-      console.log(`Cart Quantity: ${cartQuantity}`)">
+      console.log(`Cart Quantity: ${cartQuantity}`)
+      }
+    ">
     +2
   </button>
   <button onclick="
+    
+    if(cartQuantity + 3 > maxQuantity){
+      alert('You have reached the maximum quantity of items allowed.');
+    }else{
     cartQuantity = cartQuantity + 3;
     console.log(`Cart Quantity: ${cartQuantity}`)
+    }
   ">
     +3
   </button>
   <button 
     onclick="
-    cartQuantity = cartQuantity + 4;
-    console.log(`Cart Quantity: ${cartQuantity}`)">
+    
+    if(cartQuantity + 4> maxQuantity){
+      alert('You have reached the maximum quantity of items allowed.');
+    }else{
+      cartQuantity = cartQuantity + 4;
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }
+    ">
     +4
   </button>
   <button 
     onclick="
-    cartQuantity = cartQuantity + 5;
-    console.log(`Cart Quantity: ${cartQuantity}`)">
+    
+    if(cartQuantity + 5 > maxQuantity){
+      alert('You have reached the maximum quantity of items allowed.');
+    }else{
+      cartQuantity = cartQuantity + 5;
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }
+    ">
     +5
   </button>
   <button 
     onclick="
-    cartQuantity -- ;
-    console.log(`Cart Quantity: ${cartQuantity}`)">
+    if(cartQuantity - 1 < 0){
+      alert('Not Enough Items in Cart.');
+    } else{
+      cartQuantity -- ;
+      console.log(`Cart Quantity: ${cartQuantity}`)
+    }
+      ">
     Remove from Cart
   </button>
   <button 
@@ -68,6 +102,7 @@
 
   <script>
     let cartQuantity = 0;
+    let maxQuantity = 10;
 
   </script>
 </body>
