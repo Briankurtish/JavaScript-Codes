@@ -9,11 +9,14 @@
 <body>
   <script>
 
-    if(30 >= 16){
-      console.log("You can drive");
-    }
+    let age = 3;
+    const isHoliday = true;
+
+    if ((age <= 6 && isHoliday) || (age >= 65 && isHoliday)){
+      console.log('Discount');
+    } 
     else{
-      console.log("You can't drive");
+      console.log('No Discount')
     }
 
   </script>
