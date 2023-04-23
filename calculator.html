@@ -11,36 +11,34 @@
 
   <p>
     <button onclick="
-      calculation += 1;
-      console.log(calculation)">1</button>
+      updateCalculation(1);
+      ">1</button>
     <button onclick="
-      calculation += 2;
-      console.log(calculation)">2</button>
+      updateCalculation(2)">2</button>
     <button onclick="
-      calculation += 3;
-      console.log(calculation)">3</button>
-    <button onclick="console.log(calculation += ' + ')">+</button>
+      updateCalculation(3)">3</button>
+    <button onclick="updateCalculation(' + ')">+</button>
   </p>
 
   <p>
-    <button onclick="console.log(calculation += 4)">4</button>
-    <button onclick="console.log(calculation += 5)">5</button>
-    <button onclick="console.log(calculation += 6)">6</button>
-    <button onclick="console.log(calculation += ' - ')">-</button>
+    <button onclick="updateCalculation(4)">4</button>
+    <button onclick="updateCalculation(5)">5</button>
+    <button onclick="updateCalculation(6)">6</button>
+    <button onclick="updateCalculation(' - ')">-</button>
   </p>
 
   <p>
-    <button onclick="console.log(calculation += 7)">7</button>
-    <button onclick="console.log(calculation += 8)">8</button>
-    <button onclick="console.log(calculation += 9)">9</button>
-    <button onclick="console.log(calculation += ' * ')">*</button>
+    <button onclick="updateCalculation(7)">7</button>
+    <button onclick="updateCalculation(8)">8</button>
+    <button onclick="updateCalculation(9)">9</button>
+    <button onclick="updateCalculation(' * ')">*</button>
   </p>
 
   <p>
-    <button onclick="console.log(calculation += 0)">0</button>
-    <button onclick="console.log(calculation += '.')">.</button>
+    <button onclick="updateCalculation(0)">0</button>
+    <button onclick="updateCalculation('.')">.</button>
     <button onclick="console.log(eval(calculation))">=</button>
-    <button onclick="console.log(calculation += ' / ')">/</button>
+    <button onclick="updateCalculation(' / ')">/</button>
   </p>
 
   <p>
@@ -51,6 +49,11 @@
 
   <script>
     let calculation = "";
+
+    function updateCalculation(button){
+      update = calculation += button;
+      console.log(update);
+    }
   </script>
 
 </body>
