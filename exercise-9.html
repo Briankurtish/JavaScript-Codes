@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excercise 9</title>
+</head>
+<body>
+
+  <button class="js-button" onclick="getButton()">9a</button>
+  <button class="js-buttonb" onclick="getButtonB()">9b</button>
+
+  <br>
+  <br>
+  
+  <button class="js-button-heads" onclick="
+    let headButtonElement = document.querySelector('.js-button-heads').innerHTML;
+    document.querySelector('.js-moveResult').innerHTML = `You Chose: ${headButtonElement}`;
+  ">Heads</button>
+  <button class="js-button-tails" onclick="
+    let tailsButtonElement = document.querySelector('.js-button-tails').innerHTML;
+    document.querySelector('.js-moveResult').innerHTML = `You Chose: ${tailsButtonElement}`;
+  ">Tails</button>
+
+  <p class="js-moveResult"></p>
+
+
+  <input type="text" placeholder="Name" class="js-input" onkeydown="handleKeyDown(event)">
+  <button class="js-submit" onclick="
+    const text = document.querySelector('.js-input').value;
+    document.querySelector('.js-name').innerHTML = `Your name is: ${text}`;
+
+  ">Submit</button>
+  <p class="js-name"></p>
+
+  <script>
+    function getButton(){
+      const buttonElement1 = document.querySelector('.js-button');
+      console.log(buttonElement.innerHTML);
+    }
+
+    function getButtonB(){
+      const buttonElement2 = document.querySelector('.js-buttonb');
+      buttonElement2.innerHTML = '9b Done!';
+    }
+
+    function handleKeyDown(event){
+      if(event.key === 'Enter'){
+        const text = document.querySelector('.js-input').value;
+        document.querySelector('.js-name').innerHTML = `Your name is: ${text}`;
+      }
+    }
+
+    
+
+  </script>
+  
+</body>
+</html>
