@@ -8,6 +8,7 @@
 </head>
 <body>
   <script>
+    /*
     const product = {
       name : 'socks',
       price: 1090,
@@ -29,6 +30,28 @@
     const jsonString = JSON.stringify(product);
 
     console.log(JSON.parse(jsonString));
+
+    */
+
+    const object2 = {
+      message: 'Good Job!',
+      price: 799,
+    }
+
+    const { message, price} = object2;
+    console.log(message);
+    console.log(price);
+
+    const object3 ={
+      message,
+
+      method (){
+        console.log('method');
+      }
+    }
+
+    console.log(object3);
+    object3.method();
   </script>
 </body>
 </html>
