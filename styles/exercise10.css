@@ -1,0 +1,103 @@
+.add-to-cart{
+  background-color: rgb(255, 216, 20);
+  border: none;
+  padding: 10px 50px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.request-now{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.test-button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.schedule-later{
+  background-color: rgb(230, 230, 230);
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.gaming{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.music{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.tech{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.is-toggled{
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+input{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.calculate-button{
+  border: none;
+  font-size: 15px;
+  padding: 12px 15px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+}
