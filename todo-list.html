@@ -5,15 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo List</title>
+
+  <link rel="stylesheet" href="styles/todo-list.css">
 </head>
 <body>
 
   <p>Todo List Practice 1</p>
 
-  <input type="text" placeholder="Todo name" class="js-name-input">
-  <button class="js-add-button" onclick="addTodo()">Add</button>
+  <div class="todo-input-grid">
+    <input type="text" placeholder="Todo name" class="js-name-input">
+    <input type="date" class="js-due-date-input">
+    <button class="js-add-button add-button" onclick="addTodo()">Add</button>
+  </div>
 
-  <div class="js-todo-list"></div>
+  <div class="js-todo-list todo-grid"></div>
 
   <script src="scripts/todo-list.js"></script>
 </body>
