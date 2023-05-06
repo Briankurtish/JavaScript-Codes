@@ -7,12 +7,106 @@
   <title>Advanced Functions</title>
 </head>
 <body>
+
+  <button class="js-button" onclick="updateButton()">Start</button>
+  <button class="js-add-cart" onclick="addCart()">Add to Cart</button>
+
+  <p class="js-added-message"></p>
+
+  <p>
+    <button class="js-add-button" onclick="messages++">Add</button>
+    <button class="js-remove-button" onclick="messages--">Remove</button>
+  </p>
   
   <script>
 
+  let messages = 2;
+
+  setInterval(function() {
+    if (document.title === 'App') {
+      document.title = `(${messages}) New messages`;
+    } else {
+      document.title = 'App';
+    }
+  }, 1000);
+      
+
+  function addCart(){
+    const display = document.querySelector('.js-added-message');
+
+    display.innerHTML = 'Added'
+
+    setTimeout(function(){
+      display.innerHTML = '';
+    }, 2000);
+
+  }
+  
+
+  let isButtonClicked = false;
+  let intervalId;
+
+  function clickButton(){
+    if(!isButtonClicked){
+      intervalId = setInterval(changeText('Finished'), 1000);
+      isButtonClicked = true;
+      
+    }
+    else{
+      clearInterval(intervalId);
+      isButtonClicked = false;
+    }
+  }
+
+  function updateButton(){
+    let button = document.querySelector('.js-button');
+    button.innerHTML = 'Loading';
+    setTimeout(function(){
+      button.innerHTML = 'Finished'
+    }, 1000);
+  }
+
+  function changeText(text){
+    let button = document.querySelector('.js-button');
+    button.innerHTML = text;
+  }
+
+
+    /*
     setTimeout(function(){
       console.log('Timeout');
     }, 3000);
+
+    [
+      'wash dishes',
+      'Read a book',
+      'Write codes'
+    ].forEach(function(value, index){
+
+      if(value === 'wash dishes'){
+        return;
+      }
+
+      console.log(index);
+      console.log(value);
+    });
+    
+
+    let add = function(){
+      console.log(2+3);
+    }
+    
+    function runTwice(fun){
+      for(let i = 1; i <= 2; i++){
+        fun();
+      }
+    }
+
+    runTwice(add);
+
+    */
+
+    
 
   </script>
   
